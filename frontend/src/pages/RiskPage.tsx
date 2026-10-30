@@ -267,3 +267,4 @@ export const RiskPage: React.FC = () => {
     </div>
   );
 };
+

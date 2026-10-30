@@ -43,3 +43,4 @@ export const investigationsApi = {
     return res.data;
   },
 };
+

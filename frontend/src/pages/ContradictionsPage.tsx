@@ -194,3 +194,4 @@ export const ContradictionsPage: React.FC = () => {
     </div>
   );
 };
+

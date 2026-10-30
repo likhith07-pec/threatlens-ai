@@ -224,3 +224,4 @@ export const InvestigationsPage: React.FC = () => {
     </div>
   );
 };
+

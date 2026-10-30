@@ -308,3 +308,4 @@ export const InvestigationDetailPage: React.FC = () => {
     </div>
   );
 };
+

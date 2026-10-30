@@ -36,3 +36,4 @@ export const StatusDot: React.FC<StatusDotProps> = ({
     </span>
   );
 };
+

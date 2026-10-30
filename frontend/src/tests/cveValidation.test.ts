@@ -24,3 +24,4 @@ describe('CVE Format Validation', () => {
     expect(validateCveId('not-a-cve')).toBe(false);
   });
 });
+

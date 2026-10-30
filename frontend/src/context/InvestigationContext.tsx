@@ -74,3 +74,4 @@ export const InvestigationProvider: React.FC<{ children: React.ReactNode }> = ({
 };
 
 export const useInvestigation = () => useContext(InvestigationContext);
+
