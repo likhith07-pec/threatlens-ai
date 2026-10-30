@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #040d1a;
+  --color-navy-900: #071428;
+  --color-navy-800: #0c1f3f;
+  --color-navy-700: #112850;
+  --color-navy-600: #1a3561;
+  --color-navy-500: #1e3f70;
+  --color-border-navy: #1e3560;
+  --color-border-bright: #2a4d80;
+
+  --color-soc-green: #22c55e;
+  --color-soc-green-dim: #14532d;
+  --color-soc-green-text: #4ade80;
+
+  --color-soc-amber: #fbbf24;
+  --color-soc-amber-dim: #78350f;
+  --color-soc-amber-text: #fcd34d;
+
+  --color-soc-red: #f87171;
+  --color-soc-red-dim: #7f1d1d;
+  --color-soc-red-text: #fca5a5;
+
+  --color-soc-blue: #60a5fa;
+  --color-soc-blue-dim: #1e3a8a;
+  --color-soc-blue-primary: #1d4ed8;
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --navy-950: #040d1a;
+  --navy-900: #071428;
+  --navy-800: #0c1f3f;
+  --navy-700: #112850;
+  --navy-600: #1a3561;
+  --navy-500: #1e3f70;
+  --border: #1e3560;
+  --border-bright: #2a4d80;
+  --green-400: #22c55e;
+  --green-dim: #14532d;
+  --green-text: #4ade80;
+  --amber-400: #fbbf24;
+  --amber-dim: #78350f;
+  --amber-text: #fcd34d;
+  --red-400: #f87171;
+  --red-dim: #7f1d1d;
+  --red-text: #fca5a5;
+  --blue-400: #60a5fa;
+  --blue-dim: #1e3a8a;
+  --blue-primary: #1d4ed8;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-dim: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--navy-950);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--navy-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-bright);
+}
+
+/* Pulse animation for scanning status */
+@keyframes radar-pulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.radar-pulse {
+  animation: radar-pulse 2s infinite ease-in-out;
+}
